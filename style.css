@@ -283,6 +283,63 @@ footer{
     padding: 20px;
     letter-spacing: 1px;
 }
+#pricing_features{
+    background-image: url("images/rainbow-vortex.png");
+    background-size: cover;
+}
+#testimonials{
+    background-image: url("images/slanted-gradient.png");
+}
+#faq{
+    background-image: url("images/endless-constellation.png");
+}
+#skills{
+    background-image: url("images/rose-petals.png");
+}
+.faq-box{
+    margin: 20px 0;
+}
+.faq-box .card{
+    padding: 10px;
+    background-color: var(--main-color);
+    color: #fff;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+.faq-title{
+    justify-content: space-between;
+    padding: 10px;
+}
+.faq-title i{
+    cursor: pointer;
+}
+.faq-desc{
+    padding: 10px;
+    display: none;
+}
+.faq-desc.active{
+    display: block;
+}
+.skill-group{
+    margin: 30px 10px;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.skill-group .card{
+    padding: 20px;
+}
+.pf-box{
+    margin: 30px 10px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.skill-group .card li,.pf-box p,.pf-box h2{
+    padding: 10px;
+}
 @media (min-width:900px){
     .navbar ul li a::before{
         content: "";
@@ -365,5 +422,8 @@ footer{
     }
     .g-map iframe{
         height: 300px;
+    }
+    .skill-group{
+        justify-content: flex-start;
     }
 }

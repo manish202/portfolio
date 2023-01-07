@@ -20,3 +20,12 @@ toggle_desc.forEach(function(elem){
         elem.children[0].classList.toggle("fa-minus");
     })
 });
+//toggle faq accordion
+let accordions = document.querySelectorAll(".faq-box .fa-solid");
+accordions.forEach(function(elem){
+    elem.addEventListener("click",function(){
+        elem.parentElement.nextElementSibling.classList.toggle("active");
+        elem.classList.toggle("fa-plus");
+        elem.classList.toggle("fa-minus");
+    })
+});
